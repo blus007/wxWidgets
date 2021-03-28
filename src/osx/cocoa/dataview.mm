@@ -1736,7 +1736,8 @@ outlineView:(NSOutlineView*)outlineView
     }
     else
     {
-        [super keyDown:event];  // all other keys
+        implementation->keyEvent(event, self, @selector(keyDown:));
+//        [super keyDown:event];  // all other keys
     }
 }
 
